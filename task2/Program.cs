@@ -5,10 +5,13 @@
 
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-
-if (number > 99)
+while (number > 999)
 {
-    int num3 = number / 10 % 10;
+    number = number / 10;
+}
+if (number > 99 && number < 1000)
+{
+    int num3 = number % 10;
     Console.WriteLine (num3);
 } else
 {
